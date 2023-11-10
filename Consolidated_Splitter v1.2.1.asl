@@ -10,7 +10,7 @@ state("AI", "Steam") 	// Script Written by Spaz (Any Issues, Please place a quer
     float FinalLevel : 0x123623C, 0x14, 0x374, 0x4, 0x74;
     float loadingScreen : 0x123623C, 0x14, 0x374, 0x4, 0x78;
 }
-state("AI", "Epic")
+state("AI", "Epic Games")
 {
 	int fadeState : 0x15E2664;
 	float fadeNum : 0x15E2668;
