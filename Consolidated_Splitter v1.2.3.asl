@@ -1,4 +1,4 @@
-state("AI", "Steam") 	// Script Written by Spaz (Any Issues, Please place a query on #Support in the Alien: Isolation Discord)
+state("AI", "Steam") 	// Script Written by GlorpVT AKA Spaz (Any Issues, Please place a query on #Support in the Alien: Isolation Speedrunning Discord)
 {
 	int fadeState : 0x15D24B4;
 	float fadeNum : 0x15D24B8;
@@ -6,9 +6,9 @@ state("AI", "Steam") 	// Script Written by Spaz (Any Issues, Please place a quer
 	int levelManagerState : 0x12F0C88, 0x3C, 0x4C;
 	int missionNum : 0x17E4814, 0x4, 0x4E8;
 	string25 Map : 0x17E4814, 0x4, 0x470;
-    float PosX : 0x123623C, 0x14, 0x374, 0x4, 0x70;
-    float PosY : 0x123623C, 0x14, 0x374, 0x4, 0x74;
-    float PosZ : 0x123623C, 0x14, 0x374, 0x4, 0x78;
+    	float PosX : 0x123623C, 0x14, 0x374, 0x4, 0x70;
+    	float PosY : 0x123623C, 0x14, 0x374, 0x4, 0x74;
+    	float PosZ : 0x123623C, 0x14, 0x374, 0x4, 0x78;
 }
 state("AI", "Epic Games")
 {
@@ -18,9 +18,9 @@ state("AI", "Epic Games")
 	int levelManagerState : 0x1BDD628, 0x54;
 	int missionNum : 0x130D1A8, 0x78, 0x10EC;
 	string25 Map : 0x17F49B4, 0x4, 0x446;
-    float PosX : 0x3FF598, 0x80;
+    	float PosX : 0x3FF598, 0x80;
 	float PosY : 0x3FF598, 0x84;
-    float PosZ : 0x3FF598, 0x88;
+    	float PosZ : 0x3FF598, 0x88;
     
 }
 state("AI", "Xbox Game Pass") 
@@ -29,15 +29,15 @@ state("AI", "Xbox Game Pass")
 	float fadeNum : 0x0197FE98, 0xB40, 0xFD4;
 	byte gameFlowState : 0x17EEBD0, 0x8;
 	int levelManagerState : 0x01915A88, 0x78, 0x90;
-    int missionNum : 0x19759D0, 0x280;
+    	int missionNum : 0x19759D0, 0x280;
 	string25 Map : 0x0198EA88, 0x1A0;
-    float PosX : 0x01918418, 0xC0;
-    float PosY : 0x01918418, 0xC4;
+    	float PosX : 0x01918418, 0xC0;
+    	float PosY : 0x01918418, 0xC4;
 	float PosZ : 0x01918418, 0xC8;
 }
 startup
 {	
-    vars.loading = false;
+    	vars.loading = false;
 	vars.final = false;
 	vars.mission = null;
 	vars.SavedMap = null;
@@ -131,7 +131,7 @@ startup
             settings.SetToolTip("ILm17TransitElevator","Elevator that breakdown");
             settings.SetToolTip("ILm18VentGrab","Yeetus your Meatus");
             settings.SetToolTip("ILm18SpaceWalk","Space Suit ''Change'' Prompt");
-	settings.SetToolTip("CatExt","Please select ONLY ONE of the below");	
+		settings.SetToolTip("CatExt","Please select ONLY ONE of the below");	
 		settings.SetToolTip("death","Timer Ends when Screen Turns Black");
 		settings.SetToolTip("KillCiv","Timer Ends when Screen Turns Black");
 #endregion
