@@ -21,7 +21,18 @@ state("AI", "Epic Games")
     	float PosX : 0x3FF598, 0x80;
 	float PosY : 0x3FF598, 0x84;
     	float PosZ : 0x3FF598, 0x88;
-    
+}
+state("AI", "GOG") 
+{
+	int fadeState : 0x15E2664;
+	float fadeNum : 0x15E2668;
+	byte gameFlowState : 0x12506FC, 0x8;
+	int levelManagerState : 0x1BDD628, 0x54;
+	int missionNum : 0x130D1A8, 0x78, 0x10EC;
+	string25 Map : 0x17F49B4, 0x4, 0x446;
+    	float PosX : 0x3FF598, 0x80;
+	float PosY : 0x3FF598, 0x84;
+    	float PosZ : 0x3FF598, 0x88;
 }
 state("AI", "Xbox Game Pass") 
 {
@@ -144,6 +155,9 @@ init
 	if(modules.First().ModuleMemorySize == 0x1F9F000){
         version = "Epic Games";
         }
+	if(modules.First().ModuleMemorySize == 0x1F9D000){
+	version = "GOG";
+	} 
 	if(modules.First().ModuleMemorySize == 0x2766000){
         version = "Xbox Game Pass";
         }
