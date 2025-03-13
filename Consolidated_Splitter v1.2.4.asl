@@ -1,4 +1,4 @@
-state("AI", "Steam") 	// Script Written by Spaz (Any Issues, Please place a query on #Support in the Alien: Isolation Discord)
+state("AI", "Steam") 	// Script Written by GlorpVT (Any Issues, Please place a query on #Support in the Alien: Isolation Discord)
 {
 	int fadeState : 0x15D24B4;
 	float fadeNum : 0x15D24B8;
